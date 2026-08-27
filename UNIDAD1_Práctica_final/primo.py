@@ -11,3 +11,5 @@ else:
         i = i + 1
     else:
         print("Es primo")
+
+#esta es mi versión del detector de números primos, la de clase está adjunta también

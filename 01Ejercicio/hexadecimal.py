@@ -1,19 +1,31 @@
-numero = 450
+numero = 987654321
+decimal = numero
 
 if numero == 0:
-    print("0")
-
-hexa = ""
-if numero > 0:
-    while numero > 16:
+    hexa = "0"  #si el número es 0, se arroja 0
+else:
+    hexa = ""
+    while numero > 0:
         residuo = numero % 16
-        if residuo == 10: letra = "A"
-        if residuo == 11: letra = "B"
-        if residuo == 12: letra = "C"
-        if residuo == 13: letra = "D"
-        if residuo == 14: letra = "E"
-        if residuo == 15: letra = "F"
-        hexa = str(residuo) + hexa
-        residuo = numero % 16 
+        
+        if residuo < 10:
+            caracter = str(residuo) #si el residuo es menor a diez, convertimos el número a texto
+        elif residuo == 10:
+            caracter = "A"  #de aquí a abajo se asigna su letra a los residuos desde 10 hasta 15
+        elif residuo == 11:
+            caracter = "B"
+        elif residuo == 12:
+            caracter = "C"
+        elif residuo == 13:
+            caracter = "D"
+        elif residuo == 14:
+            caracter = "E"
+        elif residuo == 15:
+            caracter = "F"
+        
+        hexa = caracter + hexa  #colocamos el nuevo caracter a la izquierda
+        
+        numero = numero // 16  #dividimos el número entre 16 en bucle mientras sea mayor que 0 (sólo números enteros)
 
-print(hexa)
+print(decimal) #lo imprimo para saber el número decimal original
+print(hexa) #resultado de la conversión

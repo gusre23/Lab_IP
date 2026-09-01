@@ -1,5 +1,4 @@
-numero = 987654321
-decimal = numero
+numero = 30
 
 if numero == 0:
     hexa = "0"  #si el número es 0, se arroja 0
@@ -27,5 +26,4 @@ else:
         
         numero = numero // 16  #dividimos el número entre 16 en bucle mientras sea mayor que 0 (sólo números enteros)
 
-print(decimal) #lo imprimo para saber el número decimal original
 print(hexa) #resultado de la conversión

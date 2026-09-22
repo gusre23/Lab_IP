@@ -1,0 +1,9 @@
+while True:
+    opcion = input("Elige A, B o C:").strip().upper()
+#  strip() elimina espacios laterales, toma dos elementos de manera individual dentro de una cadena | upper() normaliza mayúsculas y minúsculas, quita asteriscos y espacios en blanco
+    if opcion in ("A", "B", "C"):
+        break
+
+    print("Opción inválida. Intenta de nuevo.")
+
+print(f"Elegiste (opcion)")

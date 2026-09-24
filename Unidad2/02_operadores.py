@@ -5,6 +5,6 @@ num2 = input("Inserta un segundo número: ")
 
 resultado = num1 + operador + num2
 
-resultado = eval (resultado) #eval trata los resultados como una operación con números
+resultado = eval(resultado) #eval trata los resultados como una operación con números
 
-print (resultado)
+print(resultado)

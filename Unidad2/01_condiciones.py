@@ -1,6 +1,6 @@
-print (bool(1))
-print (bool(0)) # sale false porque es 0
-print (bool(-1))
-print (bool(10000))
-print (bool(10.5))
-print (bool("A"))
+print(bool(1))
+print(bool(0)) # sale false porque es 0
+print(bool(-1))
+print(bool(10000))
+print(bool(10.5))
+print(bool("A"))

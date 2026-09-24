@@ -1,0 +1,13 @@
+while True:
+    nombre = input("Nombre: ").strip()  # Strip elimina espacios al inicio y al final
+    # print(nombre)
+
+# nombre comprueba que no esté vacío
+    if nombre and nombre.replace(" ", "").isalpha():  # isalpha() valida letras después de quitar espacios internos
+        print(nombre)
+        break
+
+    print("Usa letras y no dejes el nombre vacío.")
+
+nombre_normalizado = nombre.title()  # title() normaliza la presentación del nombre
+print(f"Hola, {nombre_normalizado}")

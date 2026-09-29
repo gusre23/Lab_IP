@@ -1,6 +1,7 @@
 while True:
     opcion = input("Elige A, B o C:").strip().upper()
-#  strip() elimina espacios laterales, toma dos elementos de manera individual dentro de una cadena | upper() normaliza mayúsculas y minúsculas, quita asteriscos y espacios en blanco
+# strip() elimina espacios en blanco al inicio y final de una cadena de texto
+# upper() convierte a mayúsculas la cadena de texto
     if opcion in ("A", "B", "C"):
         break
 

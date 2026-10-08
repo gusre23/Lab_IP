@@ -1,0 +1,13 @@
+from flask import Flask  # Importa la clase principal Flask de la librería instalada
+# Para instalar flask: Terminal -> Nueva terminal -> Escribir: pip install flask -> Enter
+
+app = Flask(__name__)  # Crea una instancia (un objeto) de la aplicación Flask
+# app es la variable que representa la aplicación Flask y se utiliza para definir rutas, manejar solicitudes y configurar la aplicación
+# __name__ es una variable especial de Python que representa el nombre del módulo actual. Flask la utiliza para determinar la ubicación de los archivos y recursos de la aplicación.
+
+@app.route("/")  # Es un decorador(@). Define la ruta/URL del sitio web a la que responderá la función de abajo
+def hola_mundo():
+    return "<h1>¡Hola Mundo desde flask!</h1>"
+
+if __name__ == "__main__":  # Verifica si se ejecuta este archivo directamente (no importándolo desde otro script)
+    app.run(debug=True)  # Enciende el servidor de desarrollo local. (debug=True) permite ver errores y reinicia automáticamente el servidor al hacer cambios en el código.
